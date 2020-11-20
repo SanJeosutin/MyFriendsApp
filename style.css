@@ -1,0 +1,179 @@
+/*********************************************
+*? NAME        : SanJeosutin
+*? TITLE       : style.css
+*? DESCRIPTION : Main style for the web application.
+*? CREATED ON  : 23-09-2020
+*? EDITED ON   : 20-10-2020
+*********************************************/
+
+/*DEFINE COMMON VARIABLE*/
+:root{
+    --Color_Background: #2B2D42;
+    --Color_Font: #EDF2F4;
+    --Color_Font_hover: #2B2D42;
+    --Color_Button: #2B2D42;
+    --Color_Button_Hover: #D90429;
+
+    /*USED AS COLOUR REFERENCE*/
+    --ColRef1: #2B2D42;
+    --ColRef2: #8D99AE;
+    --ColRef3: #EDF2F4;
+    --ColRef4: #EF233C;
+    --ColRef5: #D90429;
+}
+
+/*GENERAL STYLING*/
+body{
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #2B2D42, #8D99AE);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--Color_Font);
+
+    font-family: 'Belgrano', serif;
+}
+
+header{
+    /*!NEED MORE OOMPH PLSS*/
+
+    border: solid #EE243D 1px;
+    border-radius: 18px 18px 0px 0px;
+    background-color: #EE243D;
+
+    text-align: center;
+    text-shadow: 4px 6px 15px #000000;
+    margin: 0px 0.5%;
+}
+
+header h2{
+    background-color: var(--Color_Background);
+    margin: 15px 35% 5px 35%;
+}
+
+.page{
+    margin: auto;
+    padding: 10px;
+}
+
+.logo{
+    border-radius: 16px;
+    box-shadow: 8px 12px 25px 0px #000000;
+    width: 128px;
+
+    margin-bottom: 15px;
+}
+
+.navBar{
+    padding: 10px;
+    width: 8%;
+    float: left;
+}
+
+.navBar a{
+    border: black solid 1px;
+    border-radius: 12px;
+    box-shadow: 8px 12px 25px 0px #000000;
+
+    background-color: var(--Color_Button);
+    color: var(--Color_Font);
+    text-decoration: none;
+
+    text-align: center;
+    display: block;
+    margin: 5%;
+    padding: 5px;
+}
+
+.navBar a:hover{
+    font-weight: bolder;
+    background-color: var(--Color_Button_Hover);
+}
+
+.navBar .current{
+    background-color: #EF233C;
+    font-weight: bolder;
+}
+
+.content{
+    padding: 10px;
+    margin-left: 10%;
+}
+
+/*INDEX STYLING*/
+.personalInfo th{
+    text-align: left;
+    padding-right: 10px;
+}
+
+/*ALERT STYLING*/
+.alertMessage{
+    text-shadow: 0 0 5px #000000;
+
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    padding: 5px 12px;
+    margin: 5px 14px;
+}
+
+#alertFail{
+    background-color: #D90429;
+}
+
+#alertWarning{
+    background-color: #FFFF00;
+}
+
+#alertSuccess{
+    background-color: #008000;
+}
+
+/*FORM STYLING*/
+form td{
+    margin-top: 5px;
+}
+
+form p{
+    padding: 0px 5px;
+    text-align: right;
+}
+
+form input[type=text], input[type=password], input[type=email]{
+    background-color: var(--Color_Background);
+    color: var(--Color_Font);
+
+    padding: 2px 5px;
+}
+
+input[type=submit], input[type=reset]{
+    border-radius: 8px;
+    padding: 2px 5px;
+    margin: 2px 5px;
+}
+
+.button{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 5px;
+
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+input[type=submit]:active, input[type=reset]:active{
+    box-shadow: 4px 6px 10px 0px #000000;
+}
+
+
+/*TABLE STYLING*/
+.friendList td{
+    border: 1px solid black;
+    padding: 1px 2px;
+}
+
+.friendList p{
+    text-align: left;
+}
+
