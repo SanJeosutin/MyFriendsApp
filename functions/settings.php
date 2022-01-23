@@ -7,10 +7,10 @@
     *? EDITED ON   : 24-09-2020
     *********************************************/
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "myFriendsApp_db";
+    	$user="sanjqgbl_try";
+	$passWord="yrBuCvBR5HwFPcs";
+	$host="localhost";
+	$dbName="sanjqgbl_projects";
     
     $conn = @mysqli_connect($host, $user, $pass, $db);
 ?>
