@@ -8,9 +8,9 @@
     *********************************************/
 
     	$user="sanjqgbl_try";
-	$passWord="yrBuCvBR5HwFPcs";
+	$pass="yrBuCvBR5HwFPcs";
 	$host="localhost";
-	$dbName="sanjqgbl_projects";
+	$db="sanjqgbl_projects";
     
     $conn = @mysqli_connect($host, $user, $pass, $db);
 ?>
